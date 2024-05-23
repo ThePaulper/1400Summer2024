@@ -1,0 +1,19 @@
+using System;
+
+public class TemperatureAdviser
+  {
+
+    public void Main()
+    {
+      Console.WriteLine("Please enter the temperature in Celsius");
+int temp = 22;
+      if (temp < 30) 
+      {
+        Console.WriteLine("Stay hydrated and avoid prolonged sun exposure!");
+      } 
+      else 
+      {
+        Console.WriteLine("Enjoy the Pleasant Weather.");
+      }
+     }
+  }
