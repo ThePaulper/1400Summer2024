@@ -1,0 +1,36 @@
+//prints out pancake values and does math with them
+ using System;
+
+public class PancakeProgram
+  {
+    public Pancake PaulCake;
+	  public static int extra = 5;
+	  public static double pancakes = 37.5D;
+	  public double total = pancakes + extra;
+	  public string name = "Paul";
+      public string yum = "Pancakes are delicious!";
+      public bool trueBool = true;
+	  public float decimalNumber = 2.5f;
+
+    public void Main()
+    {
+      PaulCake = new Pancake(); 
+      extra += 5;
+	  PaulCake.cakeName = "Paul's Pancake";
+	  PaulCake.centimeters = 32;
+      PaulCake.centimeters++;
+    
+      
+	  
+      Console.WriteLine(name + "thinks" + yum);
+      Console.WriteLine("Paul made" + total + "pancakes.");
+     }
+  }
+
+//creates pancake class and establishes main variables
+  public class Pancake
+  {
+    public int centimeters;
+    public string cakeName;
+    public float yumminess;
+  }
