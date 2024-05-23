@@ -1,4 +1,4 @@
-//prints out pancake values and does math with them
+//looks at grades and states the letter
  using System;
 
 public class ExamGrader
