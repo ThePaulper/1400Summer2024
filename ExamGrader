@@ -7,7 +7,7 @@ public class ExamGrader
     public void Main()
     {
         Console.WriteLine("Please enter your grade");
-      int grade = 97;
+      int grade = console.ReadLine();
 if (grade >= 90) 
 {
   Console.WriteLine("You have an A!");
