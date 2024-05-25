@@ -6,21 +6,22 @@ public class ExamGrader
 
     public void Main()
     {
-        Console.WriteLine("Please enter your grade");
-      int grade = console.ReadLine();
-if (grade >= 90) 
+        Console.WriteLine("Please enter your exam score");
+      string grade = console.ReadLine();
+		int gradeNum = Convert.ToInt32(temp);
+if (gradeNum >= 90) 
 {
   Console.WriteLine("You have an A!");
 } 
-else if (grade >= 80 && < 90) 
+else if (gradeNum >= 80 && < 90) 
 {
   Console.WriteLine("You have a B.");
 } 
-else if (grade >= 70 && < 80) 
+else if (gradeNum >= 70 && < 80) 
 {
   Console.WriteLine("You have a C.");
 } 
-else if (grade > 100) 
+else if (gradeNum > 100) 
 {
   Console.WriteLine("This grade does not exist.");
 } 

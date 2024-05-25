@@ -7,8 +7,9 @@ public class TemperatureAdviser
     public void Main()
     {
       Console.WriteLine("Please enter the temperature in Celsius");
-int temp = console.ReadLine();
-      if (temp < 30) 
+string temp = Console.ReadLine();
+		int temperature = Convert.ToInt32(temp);
+      if (temperature < 30) 
       {
         Console.WriteLine("Stay hydrated and avoid prolonged sun exposure!");
       } 
