@@ -50,13 +50,13 @@ else
 	public void CheckState () {
 		switch (currentState) {
 			case Subjects.Math:
-				Console.WriteLine("Your Subject is Math,");
+				Console.WriteLine("Your Subject is Math, keep practicing and memorize equations setup!");
 				break;
 			case Subjects.Science:
-				Console.WriteLine("Your Subject is Science,");
+				Console.WriteLine("Your Subject is Science, keep practicing and remember your moles!");
 				break;
 			case Subjects.Reading:
-				Console.WriteLine("Your Subject is Reading,");
+				Console.WriteLine("Your Subject is Reading, Keep practicing and focus on your grammar!");
 				break;
 		}
 	}
