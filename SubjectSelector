@@ -1,7 +1,7 @@
 //looks at grades and subject, states the grade letter and offers advice
  using System;
 
-public class ExamGrader
+public class SubjectSelector
   {
 
     public void Main()
@@ -9,9 +9,14 @@ public class ExamGrader
         Console.WriteLine("Please enter your exam score");
       string grade = console.ReadLine();
 		int gradeNum = Convert.ToInt32(temp);
+        Console.WriteLine("Please enter your subject");
+        SubjectNames = new SubjectNames();
+        SubjectNames.currentSub = SubjectNames.Subjects.Reading;
+        string subject = console.ReadLine();
+        
 if (gradeNum >= 90) 
 {
-  Console.WriteLine("You have an A!");
+  Console.WriteLine("You have an A! Great Job!");
 } 
 else if (gradeNum >= 80 && < 90) 
 {
@@ -31,3 +36,28 @@ else
 }
      }
   }
+
+  public class SubjectNames {
+	
+	public enum Subjects {
+		Math,
+		Science,
+		Reading
+	}
+	
+	public Subjects currentSub = Subjects.Math;
+	
+	public void CheckState () {
+		switch (currentState) {
+			case Subjects.Math:
+				Console.WriteLine("Your Subject is Math,");
+				break;
+			case Subjects.Science:
+				Console.WriteLine("Your Subject is Science,");
+				break;
+			case Subjects.Reading:
+				Console.WriteLine("Your Subject is Reading,");
+				break;
+		}
+	}
+}
