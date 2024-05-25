@@ -1,0 +1,28 @@
+//looks at temp values in celsius and advises based on more conditions
+using System;
+
+public class TemperatureAdviser
+  {
+
+    public void Main()
+    {
+      Console.WriteLine("Please enter the temperature in Celsius");
+int temp = console.ReadLine();
+      if (temp > 30) 
+      {
+        Console.WriteLine("Stay hydrated and avoid prolonged sun exposure!");
+      } 
+      else if (temp < 10)
+      {
+        Console.WriteLine("It's cold outside! Remember to dress warmly.");
+      }
+      else if (temp > 10 && < 20)
+      {
+        Console.WriteLine("It's a bit cool out. Consider wearing a light jacket.");
+      }
+      else 
+      {
+        Console.WriteLine("Enjoy the Pleasant Weather.");
+      }
+     }
+  }

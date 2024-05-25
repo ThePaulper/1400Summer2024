@@ -1,0 +1,32 @@
+//looks at grades and subject, states the grade letter and offers advice
+ using System;
+
+public class ExamGrader
+  {
+
+    public void Main()
+    {
+        Console.WriteLine("Please enter your grade");
+      int grade = console.ReadLine();
+if (grade >= 90) 
+{
+  Console.WriteLine("You have an A!");
+} 
+else if (grade >= 80 && < 90) 
+{
+  Console.WriteLine("You have a B.");
+} 
+else if (grade >= 70 && < 80) 
+{
+  Console.WriteLine("You have a C.");
+} 
+else if (grade > 100) 
+{
+  Console.WriteLine("This grade does not exist.");
+} 
+else 
+{
+  Console.WriteLine("You failed.");
+}
+     }
+  }
